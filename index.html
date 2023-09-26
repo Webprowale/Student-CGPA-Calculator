@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section>
+   <div class="container">
+     <div class="con-tend">
+    <h1>CGPA Calculator</h1>
+    <br><br>
+    <form>
+      <div class="info">
+        <div class="name">
+      <label for="course-name">Course Name</label><br>
+      <input type="text" id="course-name" name="course-name">
+        </div>
+        <div class="hour">
+      <label for="credit-hours">Credit score</label><br>
+      <input type="number" id="credit-hours" name="credit-hours">
+        </div>
+      </div>
+      <label for="grade">Grade</label>
+      <br>
+      <select id="grade" name="grade">
+        <option value="5.0">A+</option>
+        <option value="4.7">A</option>
+        <option value="4.0">B+</option>
+        <option value="3.7">B</option>
+        <option value="3.0">C+</option>
+        <option value="2.7">C</option>
+        <option value="2.0">D</option>
+        <option value="0.0">F</option>
+      </select><br><br>
+      <button type="button" onclick="addCourse()" class="cta-ad">Add Course</button>
+      <br><br>
+    </form>
+    
+    <table id="course-table">
+      <tr>
+        <th>Course Name</th>
+        <th>Credit Hours</th>
+        <th>Grade</th>
+      </tr>
+    </table>
+    <br>
+    <button type="button" onclick="calculateCGPA()" class="cta-pa">Calculate CGPA</button>
+    
+    <div id="result"></div>
+    </div>
+    </div>
+    </section>
+    <footer>
+       <h4>Designed By <span><a href="#">Webprowale</a>&copy;2023</span></h4>
+    </footer>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
+ 
