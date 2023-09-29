@@ -7,6 +7,7 @@ body{
   padding: 0;
   box-sizing: border-box;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
 }
 section{
   display: flex;
@@ -21,8 +22,10 @@ section{
 .container h1{
   font-size: 20px;
   font-weight: 800;
+  margin-left: 20px;
 }
 .content{
+  max-width: 330px;
    border: 1px solid #ffd215;
    border-radius: 20px;
    padding: 20px;
@@ -115,8 +118,6 @@ th,td{
 
 
 footer{
-  position: absolute;
-  bottom: 0;
   background-color: #5c40ff;
   width: 100%;
   text-align: center;
