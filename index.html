@@ -1,62 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CGPA Calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section>
-   <div class="container">
-     <div class="con-tend">
-    <h1>CGPA Calculator</h1>
-    <br><br>
-    <form>
-      <div class="info">
-        <div class="name">
-      <input type="text" id="course-name" name="course-name" placeholder="Enter course-name">
-        </div>
-        <div class="hour">
-      <input type="number" id="credit-hours" name="credit-hours" placeholder="Credit-score">
+      <div class="container">
+          <h1>CGPA Calculator</h1>
+          <br /><br />
+          <div class="content">
+          <div class="screen">
+            <table id="course-table" style="border-collapse: separate;" >
+              <tr>
+                <th>Course Name</th>
+                <th>Credit Score</th>
+                <th>Grade</th>
+              </tr>
+            </table>
+            <div id="result"></div>
+          </div>
+          <form>
+            <div class="info">
+              <div class="name">
+                <input
+                  type="text"
+                  id="course-name"
+                  name="course-name"
+                  placeholder="Enter course-name"
+                />
+              </div>
+              <div class="hour">
+                <input
+                  type="number"
+                  id="credit-hours"
+                  name="credit-hours"
+                  placeholder="Credit-score"
+                />
+              </div>
+            </div>
+            <div class="grade">
+              <select id="grade" name="grade">
+                <option>select your grade</option>
+                <option value="5.0">A+</option>
+                <option value="4.0">B+</option>
+                <option value="3.0">C+</option
+                <option value="2.0">D</option>
+                <option value="1.0">E</option>
+                <option value="0.0">F</option>
+              </select>
+              <button type="button" onclick="addCourse()" class="cta-ad">
+                Add Course
+              </button>
+            </div>
+          </form>
+
+          <br />
+          <button type="button" onclick="calculateCGPA()" class="cta-pa">
+            Calculate CGPA
+          </button>
+
+         
         </div>
       </div>
-      <div class="grade">
-      <select id="grade" name="grade">
-        <option >select your grade</option>
-        <option value="5.0">A+</option>
-        <option value="4.7">A</option>
-        <option value="4.0">B+</option>
-        <option value="3.7">B</option>
-        <option value="3.0">C+</option>
-        <option value="2.7">C</option>
-        <option value="2.0">D</option>
-        <option value="0.0">F</option>
-      </select>
-      <button type="button" onclick="addCourse()" class="cta-ad">Add Course</button>
       </div>
-    </form>
-    
-    <table id="course-table">
-      <tr>
-        <th>Course Name</th>
-        <th>Credit Hours</th>
-        <th>Grade</th>
-      </tr>
-    </table>
-    <br>
-    <button type="button" onclick="calculateCGPA()" class="cta-pa">Calculate CGPA</button>
-    
-    <div id="result"></div>
-    </div>
-    </div>
     </section>
     <footer>
-       <h4>Designed By <span><a href="#">Webprowale</a>&copy;2023</span></h4>
+      <h4>
+        Designed By <span><a href="#">Webprowale</a>&copy;2023</span>
+      </h4>
     </footer>
-    
+
     <script src="index.js"></script>
   </body>
 </html>
- 
